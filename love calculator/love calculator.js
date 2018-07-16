@@ -1,0 +1,18 @@
+alert("So you want to find out if there really is even a niggle of chemistry between you and your crush?");
+alert("Okey lets get started then!");
+var user_name = prompt("Begin by telling us your name");
+var crush_name = prompt("Okey "+user_name+" whats your crush's name?");
+alert("Wooow, nice names, i wish the best results for you and "+crush_name+"");
+var user_age = prompt("What is your Age?");
+var crush_age = prompt("What is your crush's Age?");
+alert("Age is just a number but its important in relationships, "+user_age+" and "+crush_age+" is a good match.");
+var time_spent = prompt("How long has it been since you met "+crush_name+"?");
+alert("Okey we have all the information we need now, ready to find out if you and "+crush_name+" are a good match?");
+alert("calculating...");
+var first_calculation = Math.floor((parseInt(user_age) + parseInt(crush_age)) / (user_name.length + crush_name.length));
+console.log("first calculation result: "+first_calculation+"");
+var second_calculation = Math.floor(parseInt(time_spent) / Math.floor((Math.random() * 2) + 1));
+console.log("second calculation result: "+second_calculation+"");
+var overal_division = (first_calculation / Math.floor((Math.random() * (3 - 1)) + 1)) / (second_calculation * Math.floor((Math.random() * (3 - 1)) + 1));
+var overal_percentage = Math.round(overal_division * 100);
+alert("You and "+crush_name+" have a "+overal_percentage+"% chance of being together!!");

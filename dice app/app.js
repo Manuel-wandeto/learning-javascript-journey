@@ -1,0 +1,20 @@
+var user_name = prompt("What's your name gambler?");
+alert("Aaalriiight "+user_name.toUpperCase()+" ready to roll thy dice?");
+alert("You have three rolls, the avarage will determine your final point, Ready?");
+var rolls = "2";
+var rolls_remaining = " [ "+rolls+" rolls remaining]";
+alert("Okey "+user_name+" here goes nothing!");
+var first_roll = (Math.floor(Math.random() * 6) + 1);
+alert("First Outcome: " + first_roll + " " + rolls_remaining);
+rolls = parseInt(rolls) - 1 ;
+var rolls_remaining = " [ "+rolls+" rolls remaining]";
+var second_roll = (Math.floor(Math.random() * 6) + 1);
+alert("Second Outcome: " + second_roll + " " + rolls_remaining);
+rolls = parseInt(rolls) - 1 ;
+var rolls_remaining = " [ "+rolls+" rolls remaining]";
+var third_roll = (Math.floor(Math.random() * 6) + 1);
+var avarage = Math.floor(((first_roll + second_roll + third_roll)/3));
+alert("Third Outcome: " + third_roll + " " + rolls_remaining);
+alert("Nice going there son! wanna see your final score?");
+alert("Your final score is " + avarage + ", congratulations!!");
+
